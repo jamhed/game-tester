@@ -4,6 +4,7 @@ require Exporter;
 @EXPORT_OK = qw(on_msg on_bcast snmsg msg);
 use strict;
 use JSON;
+use open IO  => ':locale';
 
 # private
 my $_seq = 1;
