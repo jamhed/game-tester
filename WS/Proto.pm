@@ -12,9 +12,7 @@ my $client;
 # package registers with standard handlers
 our $_cb = {};
 
-our $_bt = {
-	"user/logout" => sub { exit }
-};
+our $_bt = {};
 
 # package interface
 sub on_msg {

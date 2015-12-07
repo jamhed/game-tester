@@ -16,4 +16,4 @@ Test::Spec should be patched as in: https://github.com/kingpong/perl-Test-Spec/p
 Usage
 -----
 
-$ ./proto.pl
+$ PERLLIB=./ ./proto.pl

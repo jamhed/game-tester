@@ -16,7 +16,12 @@ on_msg "user/new", sub {
 	($sid, $user) = @_;
 	$uid = $user->{id};
 	warn "sid:$sid uid:$uid";
-	runtests;
+	runtests_no_plan;
+};
+
+on_bcast "user/logout", sub {
+    done_testing;
+    exit;
 };
 
 describe "front page" => sub {
